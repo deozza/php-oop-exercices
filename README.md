@@ -5,12 +5,15 @@
 - [Requirements](#requirements)
 - [How to install](#how-to-install)
 - [How to do the exercices](#how-to-do-the-exercices)
-  - [Before start](#before-start)
   - [Check your results](#check-your-results)
     - [Manual checks](#manual-checks)
     - [Automated checks](#automated-checks)
 - [Exercices](#exercices)
   - [Exercice 1](#exercice-1)
+  - [Exercice 2](#exercice-2)
+  - [Exercice 3](#exercice-3)
+  - [Exercice 4](#exercice-4)
+  - [Exercice 5](#exercice-5)
 
 
 ## Requirements
@@ -28,7 +31,7 @@
 Check that your installation was successful by executing :
 
 ```bash
-docker compose exec php-oop-course ./vendor/bin/phpunit tests
+docker compose exec php-oop-course ./vendor/bin/phpunit ./tests/DummyTest.php
 ```
 
 You should have the following result :
@@ -51,21 +54,13 @@ This repository is based on TDD. Tests asserting you have answered correctly are
 
 In order to use this system, you will need to follow closely the instructions of each exercice. This is also true for naming your folders, your files, your classes, etc.
 
-### Before start
-
-Before starting an exercice, you will need to create a new folder in the `/app/src` folder named after the exercice. For example, if you are on `Exercice 3`, you would have to create the following folder : 
-
-```bash
-mkdir ./app/src/Exercice3
-```
-
-All the code related to that exercice must be in its folder.
+All your code must be located in the `app/src` folder.
 
 ### Check your results
 
 #### Manual checks
 
-If you want to check your code manually, you could use the `src/index.php` file and use your code inside.
+If you want to check your code manually, you could use the `app/src/index.php` file and use your code inside.
 
 You can then use the following command to execute the code in this file :
 
@@ -93,4 +88,28 @@ docker compose exec php-oop-course ./vendor/bin/phpunit tests
 
 ### Exercice 1
 
-> Create a class Product et instanciate a new object of this class.
+> Create a new class named `Product`. You should be able to instanciate a new object of this class.
+
+### Exercice 2
+
+> In your precedent class `Product`, add the following properties
+>
+> - name
+> - price
+> - dateOfRelease
+
+### Exercice 3
+
+> Modify your precedent class `Product` so its properties has default values : 
+>
+> - name : "New product"
+> - price : 9.99
+> - dateOfRelease : the date of today
+
+### Exercice 4
+
+> In your precedent class `Product`, change your properties so that `name` could only be assigned characters, `price` numbers and decimals, `dateOfRelease` a date
+
+### Exercice 5
+
+> In your precedent class `Product`, add typed `getter` and `setter` for each of the properties
