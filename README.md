@@ -46,6 +46,18 @@ mkdir ./app/src/Exercice3
 
 All the code related to that exercice must be in its folder.
 
+If you want to check you have completet that exercice, use the following command :
+
+```bash
+docker compose exec php-oop-course ./vendor/bin/phpunit tests/Exercice3
+```
+
+If you want to check you have completed all the exercices, use the following command :
+
+```bash
+docker compose exec php-oop-course ./vendor/bin/phpunit tests
+```
+
 ## Exercices
 
 ### Exercice 1
