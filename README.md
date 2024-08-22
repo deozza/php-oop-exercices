@@ -1,4 +1,17 @@
-# Object Oriented Programing in PHP exercices
+# Object Oriented Programing in PHP exercices <!-- omit in toc -->
+
+## Table of contents <!-- omit in toc -->
+
+- [Requirements](#requirements)
+- [How to install](#how-to-install)
+- [How to do the exercices](#how-to-do-the-exercices)
+  - [Before start](#before-start)
+  - [Check your results](#check-your-results)
+    - [Manual checks](#manual-checks)
+    - [Automated checks](#automated-checks)
+- [Exercices](#exercices)
+  - [Exercice 1](#exercice-1)
+
 
 ## Requirements
 
@@ -38,6 +51,8 @@ This repository is based on TDD. Tests asserting you have answered correctly are
 
 In order to use this system, you will need to follow closely the instructions of each exercice. This is also true for naming your folders, your files, your classes, etc.
 
+### Before start
+
 Before starting an exercice, you will need to create a new folder in the `/app/src` folder named after the exercice. For example, if you are on `Exercice 3`, you would have to create the following folder : 
 
 ```bash
@@ -46,7 +61,23 @@ mkdir ./app/src/Exercice3
 
 All the code related to that exercice must be in its folder.
 
-If you want to check you have completet that exercice, use the following command :
+### Check your results
+
+#### Manual checks
+
+If you want to check your code manually, you could use the `src/index.php` file and use your code inside.
+
+You can then use the following command to execute the code in this file :
+
+```bash
+docker compose exec php-oop-course php -f src/index.php
+```
+
+You can also open your browser and navigate to the `127.0.0.1:8080/src/index.php` to check your code.
+
+#### Automated checks
+
+If you want to check you have completed that exercice, use the following command :
 
 ```bash
 docker compose exec php-oop-course ./vendor/bin/phpunit tests/Exercice3
