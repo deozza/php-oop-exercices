@@ -11,6 +11,6 @@ final class Exercice3Test extends \PHPUnit\Framework\TestCase
 
         $this->assertEquals(9.99, $product->price);
         $this->assertEquals('New product', $product->name);
-        $this->assertEquals($now->format('YYYY-MM-DD'), $product->dateOfRelease->format('YYYY-MM-DD'));
+        $this->assertEquals($now->format('Y-m-d'), $product->dateOfRelease->format('Y-m-d'));
     }
 }

@@ -10,6 +10,5 @@ final class Exercice2Test extends \PHPUnit\Framework\TestCase
         $this->assertObjectHasProperty('name', $product);
         $this->assertObjectHasProperty('price', $product);
         $this->assertObjectHasProperty('dateOfRelease', $product);
-
     }
 }

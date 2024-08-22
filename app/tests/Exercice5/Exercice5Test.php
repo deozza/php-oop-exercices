@@ -11,7 +11,7 @@ final class Exercice5Test extends \PHPUnit\Framework\TestCase
 
         $this->assertEquals(9.99, $product->getPrice());
         $this->assertEquals('New product', $product->getName());
-        $this->assertEquals($now->format('YYYY-MM-DD'), $product->getDateOfRelease()->format('YYYY-MM-DD'));
+        $this->assertEquals($now->format('Y-m-d'), $product->getDateOfRelease()->format('Y-m-d'));
     }
 
     public function test_settersExistAndHaveSideEffects()
@@ -27,8 +27,8 @@ final class Exercice5Test extends \PHPUnit\Framework\TestCase
         $product->setName('Product');
         $this->assertEquals('Product', $product->getName());
 
-        $this->assertEquals($now->format('YYYY-MM-DD'), $product->getDateOfRelease()->format('YYYY-MM-DD'));
+        $this->assertEquals($now->format('Y-m-d'), $product->getDateOfRelease()->format('Y-m-d'));
         $product->setDateOfRelease(new \DateTime('2020-01-01'));
-        $this->assertEquals('2020-01-01', $product->getDateOfRelease()->format('YYYY-MM-DD'));
+        $this->assertEquals('2020-01-01', $product->getDateOfRelease()->format('Y-m-d'));
     }
 }

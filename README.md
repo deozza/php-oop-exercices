@@ -14,7 +14,10 @@
   - [Exercice 3](#exercice-3)
   - [Exercice 4](#exercice-4)
   - [Exercice 5](#exercice-5)
-
+  - [Exercice 6](#exercice-6)
+  - [Exercice 7](#exercice-7)
+  - [Exercice 8](#exercice-8)
+  - [Exercice 9](#exercice-9)
 
 ## Requirements
 
@@ -113,3 +116,29 @@ docker compose exec php-oop-course ./vendor/bin/phpunit tests
 ### Exercice 5
 
 > In your precedent class `Product`, add typed `getter` and `setter` for each of the properties
+
+### Exercice 6
+
+> In your precedent class `Product`, find a way to return the name of the product with the first letter capitalized
+
+### Exercice 7
+
+> Create a new class named `User`. This class would have the properties :
+>
+> - firstname
+> - lastname
+> - birthday
+>
+> This class would have getter and setters for all its properties.
+>
+> Then create another class named `DateCalculator`. This class would have a method called `getDaysBetweenTwoDates`. It takes two dates and calculate number of days between them. For example, if the given dates are `2024 October 31th` and `2024 October 26th`, the method would return `360` .
+>
+> Then create another class named `BirthdayPlanner`. This class would have a method called `getNextBirthdayMessage`. It takes a user as argument and would display the following message : `Hello <firstname> <lastname> ! There are <numberOfDays> days until your next birthday.`.
+
+### Exercice 8
+
+> Create a new class named `Square`. This class would have a property named `length`, typed as a float. It would also have a setter and a getter. It would also have a method to calculate and return the area.
+
+### Exercice 9
+
+> Create a new class named `Rectangle`. This class would have a property named `length` and `width`, typed as a float. It would also have a setter and a getter. It would also have a method to calculate and return the area.
