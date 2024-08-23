@@ -1,65 +1,28 @@
 <?php
 
 namespace Tests\Exercice9;
+use PHPUnit\Framework\Attributes\DataProvider;
 
 final class Exercice9Test extends \PHPUnit\Framework\TestCase
 {
-    public function test_fileExists()
+    
+    #[DataProvider('dataprovider_squareCommand')]
+    public function test_squareCommand(string $length, string $expectedOuput): void
     {
-        $filename = __DIR__ . '/../../src/Rectangle.php';
-        $this->assertFileExists($filename);
+        $output = shell_exec("echo $length | php src/SquareCommand.php");
+        $this->assertStringContainsString($expectedOuput, $output);
     }
 
-    public function test_classExists()
+
+    public static function dataprovider_squareCommand(): array 
     {
-        $this->assertTrue(class_exists('App\Rectangle'));
+        return [
+            ['6', 'Area of square is 36'],
+            ['5', 'Area of square is 25'],
+            ['4', 'Area of square is 16'],
+            ['3', 'Area of square is 9'],
+            ['2', 'Area of square is 4'],
+        ];
     }
 
-    public function test_objectInstance()
-    {
-        $rectangle = new \App\Rectangle();
-        $this->assertInstanceOf(\App\Rectangle::class, $rectangle);
-    }
-
-    public function test_getLength()
-    {
-        $rectangle = new \App\Rectangle();
-        $rectangle->length = 5;
-        $this->assertEquals(5, $rectangle->getLength());
-    }
-
-    public function test_setLength()
-    {
-        $rectangle = new \App\Rectangle();
-        $rectangle->length = 5;
-        $this->assertEquals(5, $rectangle->length);
-
-        $rectangle->setLength(50);
-        $this->assertEquals(50, $rectangle->length);
-    }
-
-    public function test_getWidth()
-    {
-        $rectangle = new \App\Rectangle();
-        $rectangle->width = 5;
-        $this->assertEquals(5, $rectangle->getWidth());
-    }
-
-    public function test_setWidth()
-    {
-        $rectangle = new \App\Rectangle();
-        $rectangle->width = 5;
-        $this->assertEquals(5, $rectangle->width);
-
-        $rectangle->setWidth(50);
-        $this->assertEquals(50, $rectangle->width);
-    }
-
-    public function test_getArea()
-    {
-        $rectangle = new \App\Rectangle();
-        $rectangle->length = 5;
-        $rectangle->width = 10;
-        $this->assertEquals(50, $rectangle->getArea());
-    }
 }

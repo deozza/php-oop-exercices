@@ -18,6 +18,9 @@
   - [Exercice 7](#exercice-7)
   - [Exercice 8](#exercice-8)
   - [Exercice 9](#exercice-9)
+  - [Exercice 10](#exercice-10)
+  - [Exercice 11](#exercice-11)
+  - [Exercice 12](#exercice-12)
 
 ## Requirements
 
@@ -137,8 +140,21 @@ docker compose exec php-oop-course ./vendor/bin/phpunit tests
 
 ### Exercice 8
 
-> Create a new class named `Square`. This class would have a property named `length`, typed as a float. It would also have a setter and a getter. It would also have a method to calculate and return the area.
+> Create a new class named `Square`. This class would have a property named `length`, typed as a float. It would also have a setter and a getter. It would also have a method `getArea` to calculate and return the area.
 
 ### Exercice 9
 
-> Create a new class named `Rectangle`. This class would have a property named `length` and `width`, typed as a float. It would also have a setter and a getter. It would also have a method to calculate and return the area.
+> Write a PHP CLI script. It would take as input the dimesion of a square. It would then echo the area of the square.
+
+### Exercice 10
+
+> Create a new class named `Rectangle`. This class would have a property named `length` and `width`, typed as a float. It would also have a setter and a getter. It would also have a method `getArea` to calculate and return the area.
+
+### Exercice 11
+
+> Adapt the CLI script to let the user chose between a square and a circle
+
+### Exercice 12
+
+> Use polymorphism to simplify the CLI script. You will write an abstract class named `Shape` with an abstract methods called `getArea`, `getDimensionsNames` and `setDimensions`.
+> Create a new class named `Circle` and add it as a choice of the CLI script
