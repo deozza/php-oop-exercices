@@ -21,6 +21,13 @@
   - [Exercice 10](#exercice-10)
   - [Exercice 11](#exercice-11)
   - [Exercice 12](#exercice-12)
+  - [Exercice 1x](#exercice-1x)
+  - [Exercice 1xx](#exercice-1xx)
+  - [Exercice 1xxx](#exercice-1xxx)
+  - [Exercice 1xxxx](#exercice-1xxxx)
+  - [Exercice 1xxxxx](#exercice-1xxxxx)
+  - [Exercice 1xxxxxx](#exercice-1xxxxxx)
+  - [Exercice 1xxxxxxx](#exercice-1xxxxxxx)
 
 ## Requirements
 
@@ -158,3 +165,31 @@ docker compose exec php-oop-course ./vendor/bin/phpunit tests
 
 > Use polymorphism to simplify the CLI script. You will write an abstract class named `Shape` with an abstract methods called `getArea`, `getDimensionsNames` and `setDimensions`.
 > Create a new class named `Circle` and add it as a choice of the CLI script
+
+### Exercice 1x
+
+> Something to do with extends on user (for employee, client, secretary, ...)
+
+### Exercice 1xx
+
+> Something to do with a login page
+
+### Exercice 1xxx
+
+> Implement form validator for the login page
+
+### Exercice 1xxxx
+
+> Create a logger when login is unsuccessful. Make it a singleton
+
+### Exercice 1xxxxx
+
+> Create a db connexion 
+
+### Exercice 1xxxxxx
+
+> Make db requests for select, insert, update, delete
+
+### Exercice 1xxxxxxx
+
+> Make it into a ORM
