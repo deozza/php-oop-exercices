@@ -44,7 +44,7 @@
 Check that your installation was successful by executing :
 
 ```bash
-docker compose exec playgrounds-php ./vendor/bin/phpunit ./tests/DummyTest.php
+docker compose exec php-oop-course ./vendor/bin/phpunit ./tests/DummyTest.php
 ```
 
 You should have the following result :
