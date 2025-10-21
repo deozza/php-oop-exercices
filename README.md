@@ -36,8 +36,8 @@
 
 ## How to install
 
-1. `git clone https://github.com/deozza/php-oop-course`
-2. `cd php-oop-course`
+1. `git clone [https://github.com/deozza/php-oop-course](https://github.com/deozza/php-oop-exercices/)`
+2. `cd php-oop-exercices`
 3. `docker compose up -d --build`
 4. `docker compose exec playgrounds-php composer install`
 
