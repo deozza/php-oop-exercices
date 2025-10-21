@@ -39,12 +39,12 @@
 1. `git clone https://github.com/deozza/php-oop-course`
 2. `cd php-oop-course`
 3. `docker compose up -d --build`
-4. `docker compose exec php-oop-course composer install`
+4. `docker compose exec playgrounds-php composer install`
 
 Check that your installation was successful by executing :
 
 ```bash
-docker compose exec php-oop-course ./vendor/bin/phpunit ./tests/DummyTest.php
+docker compose exec playgrounds-php ./vendor/bin/phpunit ./tests/DummyTest.php
 ```
 
 You should have the following result :
