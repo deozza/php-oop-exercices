@@ -39,7 +39,7 @@
 1. `git clone https://github.com/deozza/php-oop-exercices`
 2. `cd php-oop-exercices`
 3. `docker compose up -d --build`
-4. `docker compose exec playgrounds-php composer install`
+4. `docker compose exec php-oop-course composer install`
 
 Check that your installation was successful by executing :
 
