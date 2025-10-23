@@ -3,3 +3,4 @@
 /app/vendor/*
 /app/src/*
 !/app/src/index.php
+!/app/src/Traduction
